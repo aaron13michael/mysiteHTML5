@@ -1,0 +1,15 @@
+%flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    padding: 15px;
+}
+
+footer{
+    padding: 15px;
+    text-align: center;
+}
