@@ -1,65 +1,13 @@
 @import 'variables';
 @import 'base';
 
-* {
-    box-sizing: border-box;
-}
+.paragraph-pic{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 70% 50%;
+    grid-template-rows: 100%;
 
-body{
-    margin: 0px;
-    font-family: $font-stack;
-}
-
-#Banner {
-    background-color: $banner-color;
-    width: 100%;
-    padding: $base-padding;
-}
-#Banner .banner-flex {
-    @extend %flexbox;
-}
-#Banner-Title {
-    flex: 2 0 auto;
-    h1 {
-        font-size: 6em;
-        margin-bottom: 15px;
-    }
-    h2 {
-        font-size: 2em;
-    }
-    @media screen and (max-width: 1550px){
-        text-align: center;
-    }
-}
-#Banner-Img {
-    flex: 1 0 auto;
-    text-align: center;
     img {
-        width: 400px;
-        border-radius: 50%;
-    }
-}
-#Navigation {
-    nav {
-        @extend %flexbox;
-        flex-wrap: nowrap;
-        width: 100%;
-        position: fixed;
-        a, a:active, a:visited {
-            width: 25%;
-            text-align: center;
-            background-color: rgb(240, 235, 235);
-            border: 1px solid darkgray;
-            color: black;
-            text-decoration: none;
-            font-size: 18pt;
-            transition: color 300ms;
-        }
-        a:hover {
-            cursor: pointer;
-            color: $banner-color;
-            
-        }
-        
+        width: 50%;
     }
 }
