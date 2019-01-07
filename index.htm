@@ -4,6 +4,8 @@
         <meta charset="utf-8"/>
         <title>Aaron Stadler</title>
         <link href="css/home.css" rel="stylesheet"/>
+
+        
     </head>
     <body>
         <section id=>
@@ -59,6 +61,18 @@
                     up to!
                 </p>   
             </article>
+            <svg id="triangles" width="100%" height="300px" viewBox="0 0 800 800">
+                <defs>
+                    <g id="triangleTemplate">
+                        <polygon points="0,50 -200,350 200,350"></polygon>
+                    </g>
+                </defs>
+                <g id=triangleGraphic>
+                    <use id="tri1" x= "50%" y="0%" xlink:href="#triangleTemplate" style="fill:cornflowerblue;"/>
+                    <use id="tri2" x= "25%" y="37.5%" xlink:href="#triangleTemplate" style="fill:magenta;"/>
+                    <use id="tri3" x= "75%" y="37.5%" xlink:href="#triangleTemplate" style="fill:purple;"/>
+                </g>
+            </svg>
             <article id="Philosophy">
                 <header>
                     <h3>Philosophy</h3>
@@ -77,5 +91,6 @@
 
         </main>
         <footer>Copyright 2018 Aaron Stadler</footer>
+        <script src="scripts/svgTransform.js"></script>
     </body>
 </html>
