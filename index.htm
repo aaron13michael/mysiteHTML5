@@ -4,7 +4,10 @@
         <meta charset="utf-8"/>
         <title>Aaron Stadler</title>
         <link href="css/home.css" rel="stylesheet"/>
-
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
         
     </head>
     <body>
@@ -51,28 +54,34 @@
                         Bros. Ultimate if I say so myself), reading books, going to the gym, volunteering, and practicing
                         martial arts. I also love going to concerts and often make trips into the city to see live shows.
                     </p>
-                    <img id="Bio-pic" src="inkling.png"/>   
+                        <figure>
+                            <img src="inkling.png"/>
+                        </figure>
+                    <p>
+                        <em>Why this site?</em><br><br>
+                        I made this site mostly for the fun of it and to practice my skills, but it also will serve as a hub
+                        to showcase projects I'm working on. It's pretty barren now, but once I get the site up I plan to
+                        in the form of side projects. Check the Projects link in the navigation bar to see what I'm
+                        up to!
+                    </p>  
                 </div>
-                <p>
-                    <em>Why this site?</em><br><br>
-                    I made this site mostly for the fun of it and to practice my skills, but it also will serve as a hub
-                    to showcase projects I'm working on. It's pretty barren now, but once I get the site up I plan to
-                    in the form of side projects. Check the Projects link in the navigation bar to see what I'm
-                    up to!
-                </p>   
+                  
             </article>
-            <svg id="triangles" width="100%" height="300px" viewBox="0 0 800 800">
-                <defs>
-                    <g id="triangleTemplate">
-                        <polygon points="0,50 -200,350 200,350"></polygon>
+            <div class="centeredGraphic">
+                <svg id="triangles" width="300px" height="300px" viewBox="0 0 800 800">
+                    <defs>
+                        <g id="triangleTemplate">
+                            <polygon points="0,50 -200,350 200,350"></polygon>
+                        </g>
+                    </defs>
+                    <g id=triangleGraphic>
+                        <use id="tri1" x= "400px" y="0px" xlink:href="#triangleTemplate" style="fill:cornflowerblue;"/>
+                        <use id="tri2" x= "200px" y="300px" xlink:href="#triangleTemplate" style="fill:magenta;"/>
+                        <use id="tri3" x= "600px" y="300px" xlink:href="#triangleTemplate" style="fill:purple;"/>
                     </g>
-                </defs>
-                <g id=triangleGraphic>
-                    <use id="tri1" x= "50%" y="0%" xlink:href="#triangleTemplate" style="fill:cornflowerblue;"/>
-                    <use id="tri2" x= "25%" y="37.5%" xlink:href="#triangleTemplate" style="fill:magenta;"/>
-                    <use id="tri3" x= "75%" y="37.5%" xlink:href="#triangleTemplate" style="fill:purple;"/>
-                </g>
-            </svg>
+                
+                </svg>
+            </div>
             <article id="Philosophy">
                 <header>
                     <h3>Philosophy</h3>

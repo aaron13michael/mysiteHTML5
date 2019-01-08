@@ -72,9 +72,27 @@ article {
 .paragraph-pic {
   display: grid;
   grid-column-gap: 20px;
-  grid-template-columns: 70% 50%;
-  grid-template-rows: 100%; }
-  .paragraph-pic img {
-    width: 50%; }
+  grid-row-gap: 0px;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%, 100%, 100%; }
+  .paragraph-pic figure {
+    text-align: center; }
+    .paragraph-pic figure img {
+      width: 30%; }
+  @media screen and (min-width: 960px) {
+    .paragraph-pic {
+      grid-column-gap: 20px;
+      grid-row-gap: 25px;
+      grid-template-columns: 70% 50%;
+      grid-template-rows: 60% 30%; }
+      .paragraph-pic figure {
+        text-align: left; }
+        .paragraph-pic figure img {
+          width: 50%; }
+      .paragraph-pic .mobile {
+        display: none; } }
+
+.centeredGraphic {
+  text-align: center; }
 
 /*# sourceMappingURL=home.css.map */
