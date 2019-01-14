@@ -47,14 +47,16 @@ body{
 }
 
 #Navigation {
+    
     nav {
         display: flex;
         flex-flow: row wrap;
-        align-items: center;
+        align-items: left;
         flex-wrap: nowrap;
         justify-content: flex-end;
         width: 100%;
         margin-top: $base-padding;
+        transition: transform 500ms;
         @media screen and (max-width: 960px) {
             display: flex;
             flex-flow: column;
@@ -69,11 +71,10 @@ body{
         a, a:active, a:visited {
             width: 10%;
             text-align: center;
-            color: rgb(202, 88, 255);
+            color: $navlinks-color;
             text-decoration: none;
             font-size: 12pt;
             font-weight: bold;
-            transition: color 300ms;
             padding-right: 10px;
             padding-left: 10px;
             @media screen and (max-width: 960px) {
@@ -83,6 +84,9 @@ body{
                 font-size: 16pt;
                 padding: 10px;
                 padding-top: 7px;
+            }
+            @media screen and (min-width: 960px){
+                transition: color 300ms;
             }
         }
         a:hover {
@@ -108,10 +112,37 @@ article {
     line-height: 25px;
 }
 
-
-#overlay {
+.mobile{
     display: none;
-    @media screen and (max-width: 960px){
+}
+
+@media screen and (max-width: 960px){
+    .mobile{
+        display: block;
+    }
+    #Hamburger{ 
+        width: 60px;
+        height: 50px;
+        background-color: $navlinks-color;
+        line-height: 10px;
+        padding: 5px;
+        padding-top: 7px;
+        margin-bottom: 15px;
+        transition: background-color 300ms;
+        div {
+            border-radius: 25px;
+            width: 50px;
+            height: 6.5px;
+            margin-bottom: 7px;
+            background-color: white;
+        }
+    }
+    #Hamburger:hover{
+        cursor: pointer;
+        background-color: $banner-color;
+    }
+
+    #overlay {
         display: block;
         position: fixed;
         width: 100%;

@@ -1,6 +1,5 @@
 "use strict";
-
-(function(){
+function rotateTriangles(){
     var initialTheta = 0;
     var currentTheta = initialTheta;
     var thetaDelta= 10;
@@ -83,6 +82,4 @@
         }
     }
     */
-}()
-    
-);
+}
