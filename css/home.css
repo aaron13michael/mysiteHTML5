@@ -22,12 +22,27 @@ body {
   #Banner-Title h1 {
     font-size: 6em;
     margin-bottom: 15px; }
-    @media screen and (max-width: 1035px) {
+    @media (max-width: 1035px) {
       #Banner-Title h1 {
         font-size: 5em; } }
+    @media (max-width: 870px) {
+      #Banner-Title h1 {
+        font-size: 4em; } }
+    @media (max-width: 700px) {
+      #Banner-Title h1 {
+        font-size: 3em; } }
+    @media (max-width: 528px) {
+      #Banner-Title h1 {
+        font-size: 2em; } }
   #Banner-Title h2 {
     font-size: 2em; }
-  @media screen and (max-width: 1550px) {
+    @media (max-width: 700px) {
+      #Banner-Title h2 {
+        font-size: 1.5em; } }
+    @media (max-width: 528px) {
+      #Banner-Title h2 {
+        font-size: 1em; } }
+  @media (max-width: 1550px) {
     #Banner-Title {
       text-align: center; } }
 
@@ -35,39 +50,40 @@ body {
   flex: 1 0 auto;
   text-align: center; }
   #Banner-Img img {
-    width: 400px;
+    width: 250px;
     border-radius: 50%; }
+    @media (min-width: 529px) {
+      #Banner-Img img {
+        width: 400px; } }
 
 #Navigation nav {
   display: flex;
   flex-flow: row wrap;
-  align-items: left;
   flex-wrap: nowrap;
   justify-content: flex-end;
   width: 100%;
-  margin-top: 25px;
-  transition: transform 500ms; }
-  @media screen and (max-width: 960px) {
+  margin-top: 25px; }
+  @media (max-width: 961px) {
     #Navigation nav {
       display: flex;
       flex-flow: column;
       justify-content: flex-start;
-      width: 20%;
+      width: 179.51px;
       height: 100%;
       position: fixed;
       top: 0;
+      left: -200px;
       background-color: whitesmoke;
-      margin-top: 0; } }
+      margin-top: 0;
+      transition: transform 500ms; } }
   #Navigation nav a, #Navigation nav a:active, #Navigation nav a:visited {
     width: 10%;
     text-align: center;
     color: #2427e6;
     text-decoration: none;
-    font-size: 12pt;
-    font-weight: bold;
-    padding-right: 10px;
-    padding-left: 10px; }
-    @media screen and (max-width: 960px) {
+    font-size: 14pt;
+    font-weight: bold; }
+    @media (max-width: 960px) {
       #Navigation nav a, #Navigation nav a:active, #Navigation nav a:visited {
         width: 100%;
         height: 40px;
@@ -75,13 +91,16 @@ body {
         font-size: 16pt;
         padding: 10px;
         padding-top: 7px; } }
-    @media screen and (min-width: 960px) {
+    @media (min-width: 960px) {
       #Navigation nav a, #Navigation nav a:active, #Navigation nav a:visited {
-        transition: color 300ms; } }
+        transition: color 300ms;
+        transform: none !important;
+        margin-right: 10px;
+        margin-left: 10px; } }
   #Navigation nav a:hover {
     cursor: pointer;
     color: cornflowerblue; }
-    @media screen and (max-width: 960px) {
+    @media (max-width: 960px) {
       #Navigation nav a:hover {
         color: whitesmoke;
         background-color: cornflowerblue; } }
@@ -101,11 +120,15 @@ article {
 .mobile {
   display: none; }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .mobile {
     display: block; }
 
-  #Hamburger {
+  .hamburger-wrapper {
+    background: blue;
+    height: 50px; }
+
+  .hamburger {
     width: 60px;
     height: 50px;
     background-color: #2427e6;
@@ -114,23 +137,30 @@ article {
     padding-top: 7px;
     margin-bottom: 15px;
     transition: background-color 300ms; }
-    #Hamburger div {
+    .hamburger div {
       border-radius: 25px;
       width: 50px;
       height: 6.5px;
       margin-bottom: 7px;
       background-color: white; }
 
-  #Hamburger:hover {
+  .hamburger:hover {
     cursor: pointer;
     background-color: cornflowerblue; }
 
-  #overlay {
-    display: block;
+  #Overlay {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); } }
+    background-color: rgba(0, 0, 0, 0.6); }
+
+  #Top-bar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #2427e6;
+    transition: transform 300ms; } }
 .paragraph-pic {
   display: grid;
   grid-column-gap: 20px;
@@ -140,7 +170,7 @@ article {
     text-align: center; }
     .paragraph-pic figure img {
       width: 30%; }
-  @media screen and (min-width: 960px) {
+  @media (min-width: 960px) {
     .paragraph-pic {
       grid-column-gap: 20px;
       grid-row-gap: 25px;

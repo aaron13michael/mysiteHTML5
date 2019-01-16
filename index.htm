@@ -5,14 +5,20 @@
         <title>Aaron Stadler</title>
         <link href="css/home.css" rel="stylesheet"/>
         <script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
         
     </head>
     <body>
-        <div id=overlay class="mobile">
-
+        <div id="Overlay" class="mobile">
+        </div>
+        <div id="Top-bar">
+            <div class="mobile hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
         <section id="Banner">
             <div class="banner-flex">
@@ -27,14 +33,17 @@
         </section>
         <section id="Navigation">
             <nav>
-                <div id="Hamburger" class="mobile">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+
+                <div class="hamburger-wrapper">
+                    <div class="mobile hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <a href="index.htm">Home</a>
-                <a href="#About-Me">About Me</a>
-                <a href="#Philosophy">Philosophy</a>
+                <a data-link="AboutMe">About Me</a>
+                <a data-link="Philosophy">Philosophy</a>
                 <a href="#">Projects</a>
             </nav>
         </section>

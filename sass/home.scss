@@ -13,7 +13,7 @@
         }
     }
     
-    @media screen and (min-width: 960px) {
+    @media (min-width: 960px) {
         grid-column-gap: 20px;
         grid-row-gap: 25px;
         grid-template-columns: 70% 50%;
